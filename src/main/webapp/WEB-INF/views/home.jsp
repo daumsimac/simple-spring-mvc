@@ -10,5 +10,7 @@
 </h1>
 
 <P>  The time on the server is ${serverTime}. </P>
+<h1> Enum타입 : ${enumType}</h1>
+<h2> Message : ${message}</h2>
 </body>
 </html>
