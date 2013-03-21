@@ -41,13 +41,13 @@ public enum CodeDescriptionOrderEnum implements CodeEncodableEnum, Ordered {
 		return description;
 	}
 
-	public static final CodeDescriptionOrderEnum valueFromOrder(int order) {
-		for(CodeDescriptionOrderEnum codeEnum : values()) {
+	public static final CodeDescriptionOrderEnumTest valueFromOrder(int order) {
+		for(CodeDescriptionOrderEnumTest codeEnum : values()) {
 			if(codeEnum.getOrder() == order)
 				return codeEnum;
 		}
 		
-		throw new IllegalArgumentException("Unknown order " + order + " for enum type " + CodeDescriptionOrderEnum.class.getSimpleName());
+		throw new IllegalArgumentException("Unknown order " + order + " for enum type " + CodeDescriptionOrderEnumTest.class.getSimpleName());
 	}
 	
 	/**
@@ -55,11 +55,11 @@ public enum CodeDescriptionOrderEnum implements CodeEncodableEnum, Ordered {
 	 * @return
 	 * order를 기준으로 정렬된 enum목록이 필요한 경우(View단에서 select에 정렬된 값으로 보여주는 용도?)
 	 */
-	public static final Set<CodeDescriptionOrderEnum> values(boolean sort) {
-		Set<CodeDescriptionOrderEnum> enums = null;
+	public static final Set<CodeDescriptionOrderEnumTest> values(boolean sort) {
+		Set<CodeDescriptionOrderEnumTest> enums = null;
 		if(sort) {
-			enums = new TreeSet<CodeDescriptionOrderEnum>(new OrderComparator());
-			for(CodeDescriptionOrderEnum step : values())
+			enums = new TreeSet<CodeDescriptionOrderEnumTest>(new OrderComparator());
+			for(CodeDescriptionOrderEnumTest step : values())
 				enums.add(step);
 		} else {
 			enums = Sets.newHashSet(values());

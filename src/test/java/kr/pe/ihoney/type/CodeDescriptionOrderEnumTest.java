@@ -4,7 +4,7 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-public class EnumTest {
+public class CodeDescriptionOrderEnumTest {
 
 	@Test
 	public void test() {
