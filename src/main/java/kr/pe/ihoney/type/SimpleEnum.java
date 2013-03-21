@@ -9,6 +9,6 @@ public enum SimpleEnum {
 	FIRST,
 	SECOND,
 	THIRD,
-	FORTH,
+	FOURTH,
 	FIFTH;
 }
